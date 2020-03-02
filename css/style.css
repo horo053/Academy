@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #131313;
+  color: #ffffff;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+/*nav*/
+.nav {
+  margin-left: 9%;
+  text-transform: uppercase;
+}
+
+.brand {
+  font-weight: bold;
+  color: #E3B873;
+}
+
+.text-main {
+  margin-left: 40px;
+  color: #E3B873;
+}
+
+.nav-a {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a {
+  margin-right: 40px; 
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.social button {
+  width: 161px;
+  height: 37px;
+  margin-left: 45px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #E3B873;
+  color: #ffffff;
+}
+/*конец nav*/
