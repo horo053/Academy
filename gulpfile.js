@@ -28,7 +28,7 @@ function gRename(done) {
 };
 
 function serveSass() {
-  return src("./sass/*.acss")
+  return src("./sass/*.sacss")
     .pipe(sass())
     .pipe(dest('./css'))
     .pipe(browserSync.stream());
