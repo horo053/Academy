@@ -5,7 +5,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 
 // Static server
- function bs() {
+function bs() {
   serveSass();
   browserSync.init({
       server: {
@@ -28,9 +28,9 @@ function gRename(done) {
 };
 
 function serveSass() {
-  return src("./scss/*.scss")
+  return src("./sass/*.acss")
     .pipe(sass())
-    .pipe(dest('./scss'))
+    .pipe(dest('./css'))
     .pipe(browserSync.stream());
 };
 
