@@ -325,6 +325,10 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #ffffff; }
+  .button--outline {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff; }
 
 .container {
   width: 85%;
@@ -373,6 +377,9 @@ template {
   color: #ffffff; }
   .hero__content {
     max-width: 670px; }
+  .hero__text {
+    font-size: 22px;
+    max-width: 500px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -408,7 +415,8 @@ template {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-style: 40px; }
+  font-size: 40px;
+  line-height: 53px; }
   .title--primary {
     color: #E3B873; }
 
