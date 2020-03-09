@@ -395,7 +395,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 2.65rem;
   transition: color 0.2s;
   font-weight: normal;
   font-size: 1rem; }
@@ -502,7 +502,7 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   html {
     font-size: 12px; }
   .nav__item {
