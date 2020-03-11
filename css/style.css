@@ -374,6 +374,15 @@ img {
       height: 2px;
       background-color: #E3B873;
       margin: 0 10px; }
+  .section-title__text {
+    display: inline-block;
+    text-transform: none;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.43rem;
+    line-height: 1.9rem;
+    width: 53rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.2rem; }
 
 .header {
   position: fixed;
@@ -506,8 +515,10 @@ img {
   .title--primary {
     color: #E3B873; }
 
-.types__section-title {
-  margin-bottom: 2.2rem; }
+.types {
+  margin-bottom: 16.4rem; }
+  .types__section-title {
+    margin-bottom: 2.2rem; }
 
 .row {
   display: flex;
@@ -555,6 +566,24 @@ img {
   background-color: #E3B873;
   color: #ffffff;
   padding: 1.214rem 2.9rem; }
+
+.complexity {
+  margin-bottom: 16.4rem; }
+  .complexity__section-title {
+    margin-bottom: 2.2rem; }
+
+.card__pricetag-complexity {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.28rem;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.214rem 0;
+  padding-left: 2.36rem;
+  padding-right: 4.9rem; }
 
 @media screen and (max-width: 1250px) {
   html {
