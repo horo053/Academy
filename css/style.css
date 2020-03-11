@@ -606,7 +606,9 @@ img {
   .types__card {
     margin-bottom: 4.3rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .complexity__card {
+    margin-bottom: 4.3rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
