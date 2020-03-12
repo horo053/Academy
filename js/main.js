@@ -10,4 +10,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   closeBtn.addEventListener('click', switchModal);
+  
+
 });
