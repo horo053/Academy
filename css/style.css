@@ -390,7 +390,8 @@ template {
   margin: auto; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 0 !important; }
 
 html {
   font-size: 14px; }
@@ -559,7 +560,7 @@ img {
     color: #E3B873; }
 
 .types {
-  margin-bottom: 16.4rem; }
+  margin-bottom: 10rem; }
   .types__section-title {
     margin-bottom: 2.2rem; }
 
@@ -629,6 +630,8 @@ img {
   padding-right: 4.9rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   display: flex;
@@ -640,6 +643,9 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(19, 19, 19, 0.6); }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
