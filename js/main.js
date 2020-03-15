@@ -11,5 +11,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   closeBtn.addEventListener('click', switchModal);
   
+  document.addEventListener('keypress', (event) => {
+    if (event.keyCode == 27) {
+      modal.classList.remove('modal--visible');
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if ( event !='.modal') {
+      modal.classList.remove('modal--visible');
+    }
+  });
 
 });
