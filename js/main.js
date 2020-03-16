@@ -1,7 +1,8 @@
-/*document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
+  const modalDialog = document.querySelector('.modal__dialog');
   const switchModal = () => {
     modal.classList.toggle('modal--visible');
   }
@@ -18,13 +19,13 @@
   });
 
   document.addEventListener('click', (event) => {
-    if (event.target != 'modal__dialog' && event.target == 'modal') {
+    if (event.target != modalDialog && event.target == modal) {
       modal.classList.remove('modal--visible');
     }
   });
-});*/
+});
 
-$(document).ready(function () {
+/*$(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle="modal"]'),
       closeBtn = $('.modal__close');
@@ -51,4 +52,4 @@ $(document).ready(function(){
     return false;
   });
 
-});
+});*/
