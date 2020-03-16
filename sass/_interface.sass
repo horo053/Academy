@@ -54,3 +54,33 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+.topBtn
+  &__scroll-up
+    //display: flex
+    //justify-content: center
+    //align-items: center
+    display: none
+    text-align: center
+    padding-top: 3rem
+    position: fixed
+    bottom: 0
+    left: 0
+    min-width: 17.6rem
+    min-height: 6.92rem
+    background-color: $dark
+    text-transform: uppercase
+    text-decoration: none
+    color: $light
+    font-size: 0.85rem
+    font-family: 'Yeseva One', cursive
+    &::after
+      display: inline-block
+      vertical-align: middle
+      content: ' '
+      background: url('../img/arrow-down.svg') no-repeat center
+      transform: rotate(180deg)
+      width: 30px
+      height: 30px
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-left: 15px
