@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+/*document.addEventListener("DOMContentLoaded", function(event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       modal.classList.remove('modal--visible');
     }
   });
-});
+});*/
 
-/*$(document).ready(function () {
+$(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle="modal"]'),
       closeBtn = $('.modal__close');
@@ -36,6 +36,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
       closeBtn.on('click', function () {
         modal.toggleClass('modal--visible');
       });
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 25 + bullets.width() + 25)
+  bullets.css('left', prev.width() + 25)
+
 });
 
 $(document).ready(function(){
@@ -51,5 +71,4 @@ $(document).ready(function(){
     $("html, body").animate({ scrollTop: 0 }, 500);
     return false;
   });
-
-});*/
+});
