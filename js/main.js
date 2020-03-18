@@ -47,8 +47,7 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  });
-
+  })
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
