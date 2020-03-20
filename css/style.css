@@ -998,7 +998,42 @@ img {
     margin-top: 2rem; }
   .col-50 {
     width: 80%;
-    margin-left: 5rem; } }
+    margin-left: 5rem; }
+  .control__section-title {
+    margin-top: -65rem; }
+  .control__text {
+    color: #ffffff;
+    font-size: 1.07rem;
+    width: 30rem; }
+  .control__label {
+    color: #ffffff; }
+  .control__video {
+    max-width: 29.179rem;
+    min-height: 15.5rem; }
+  .control__form {
+    display: flex;
+    justify-content: center;
+    max-width: 30rem; }
+  .control__text {
+    margin-bottom: 1rem; }
+  .control__input-group {
+    flex-basis: 100%;
+    margin: auto;
+    margin-top: 2rem; }
+  .control__button {
+    width: 24.2857rem;
+    height: 4rem;
+    margin: auto;
+    font-weight: normal;
+    order: 1; }
+  .control__policy {
+    margin-top: 0;
+    margin-bottom: 4rem; }
+    .control__policy-label {
+      justify-content: start;
+      color: #ffffff; }
+  .projects {
+    padding-bottom: 70rem; } }
 
 @media screen and (max-height: 510px) {
   .hero__scroll-down {

@@ -55,6 +55,8 @@ $(document).ready(function () {
   next.css('left', prev.width() + 25 + bullets.width() + 25)
   bullets.css('left', prev.width() + 25)
 
+  new WOW().init();
+
 });
 
 $(document).ready(function(){
