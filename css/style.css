@@ -864,6 +864,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -20rem;
+    margin-bottom: 3.7rem;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -874,6 +875,11 @@ img {
     text-align: center;
     margin-top: 0;
     margin-bottom: 3.4rem; }
+    .footer__title--map {
+      max-width: 35rem;
+      margin: auto;
+      line-height: 2rem;
+      color: #E3B873; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -903,6 +909,15 @@ img {
     font-family: 'Futura Demi', sans-serif;
     font-size: 1.07rem;
     font-weight: bold; }
+  .footer__map {
+    max-width: 66.07rem;
+    margin: auto; }
+    .footer__map--icon {
+      text-align: center;
+      margin-top: 1.6rem;
+      margin-bottom: 2.5rem; }
+    .footer__map--icn {
+      margin-right: 1rem; }
   .footer__menu {
     width: 100%;
     background-color: #131313;
