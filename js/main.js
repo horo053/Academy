@@ -68,6 +68,10 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      },
+      userQuestion: {
+        required: true,
+        minlength: 10
       }
     },
     messages: {
@@ -79,9 +83,59 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязательно укажите Email",
         email: "Введите в формате: name@domain.com"
+      },
+      userQuestion: {
+        required: "Обязательно напишите свой вопрос",
+        minlength: "Вопрос должен состоять из десяти символов и более"
       }
     }
   });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+    },
+    messages: {
+      userName: {
+        required: "Обязательно укажите Имя",
+        minlength: "Имя должно быть не менее двух букв"
+      },
+      userPhone: "Телефон обязателен для ввода",
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      userQuestion: {
+        required: true,
+        minlength: 10
+      },
+    },
+    messages: {
+      userName: {
+        required: "Обязательно укажите Имя",
+        minlength: "Имя должно быть не менее двух букв"
+      },
+      userPhone: "Телефон обязателен для ввода",
+      userQuestion: {
+        required: "Обязательно напишите ваш вопрос",
+        minlength: "Вопрос должен состоять из десяти символов и более"
+      },
+    }
+  });
+
+
 
   $('[type="tel"]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"});
 
