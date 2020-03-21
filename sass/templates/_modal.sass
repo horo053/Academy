@@ -32,6 +32,7 @@
     cursor: pointer
   &__title
     font-family: 'Yeseva One', cursive
+    font-weight: normal
     font-size: 1.357rem
     line-height: 1.86rem
     text-align: center
@@ -41,12 +42,24 @@
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.4rem
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.4rem
+      &--email
+        margin-bottom: 0
     &:last-of-type
       margin-bottom: 0
   &__policy
-    margin-bottom: 2.7rem
+    margin-bottom: 2.8rem
   &__button
     align-self: flex-end
     border-radius: 0
     width: 15.2rem
+label
+  &.invalid
+    color: tomato
+    margin-top: 0.5rem
+input
+  &.invalid
+    border-bottom: 1px solid tomato
