@@ -834,7 +834,8 @@ img {
   padding: 1.214rem 2.9rem; }
 
 .complexity {
-  background: linear-gradient(to top, #131313 55%, #ffffff 45%); }
+  background: linear-gradient(to top, #131313 55%, #ffffff 45%);
+  padding-bottom: 25em; }
   .complexity__section-title {
     margin-bottom: 2.2rem; }
 
@@ -855,12 +856,14 @@ img {
   padding-right: 4.9rem; }
 
 .footer {
-  margin-top: 10rem;
+  padding-top: 5rem;
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer-wrap {
+    transform: translate;
     background-color: #181818;
     max-width: 63.07rem;
     margin: auto;
+    margin-top: -20rem;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
