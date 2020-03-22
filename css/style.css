@@ -1103,7 +1103,15 @@ input.invalid {
     margin-top: 2rem; }
   .col-50 {
     width: 80%;
-    margin-left: 10rem; } }
+    margin-left: 10rem; }
+  .col-30 {
+    margin-top: 4rem; }
+  .team {
+    margin-top: -40rem; }
+    .team__card--text {
+      margin-left: 2.5rem; }
+  .footer {
+    margin-top: -10rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1188,10 +1196,12 @@ input.invalid {
   .projects {
     padding-bottom: 70rem; }
   .footer {
-    background: #131313; }
+    background: #131313;
+    margin-top: 15rem; }
     .footer-wrap {
       padding-top: 5rem;
-      background-color: #131313; }
+      background-color: #131313;
+      margin-top: 0; }
     .footer__input-group {
       flex-basis: 100%; }
       .footer__input-group--full-width {
@@ -1203,7 +1213,14 @@ input.invalid {
       height: 4rem;
       margin: auto;
       margin-top: 4rem;
-      font-weight: normal; } }
+      font-weight: normal; }
+  .team {
+    margin-top: 0;
+    background-color: #131313; }
+    .team__after {
+      display: none; }
+  .footer {
+    margin-top: 0; } }
 
 @media screen and (max-height: 510px) {
   .hero__scroll-down {
