@@ -58,6 +58,7 @@ $(document).ready(function () {
   new WOW().init();
 
   $('.modal__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       userName: {
@@ -72,7 +73,8 @@ $(document).ready(function () {
       userQuestion: {
         required: true,
         minlength: 10
-      }
+      },
+      policyCheckbox: "required"
     },
     messages: {
       userName: {
@@ -87,11 +89,13 @@ $(document).ready(function () {
       userQuestion: {
         required: "Обязательно напишите свой вопрос",
         minlength: "Вопрос должен состоять из десяти символов и более"
-      }
+      },
+      policyCheckbox: "Дайте согласие на обработку данных"
     }
   });
 
   $('.control__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       userName: {
@@ -99,6 +103,7 @@ $(document).ready(function () {
         minlength: 2
       },
       userPhone: "required",
+      controlCheckbox: "required"
     },
     messages: {
       userName: {
@@ -106,10 +111,12 @@ $(document).ready(function () {
         minlength: "Имя должно быть не менее двух букв"
       },
       userPhone: "Телефон обязателен для ввода",
-    }
+      controlCheckbox: "Дайте согласие на обработку данных"
+    },
   });
 
   $('.footer__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       userName: {
@@ -121,6 +128,7 @@ $(document).ready(function () {
         required: true,
         minlength: 10
       },
+      footerCheckbox: "required"
     },
     messages: {
       userName: {
@@ -132,6 +140,7 @@ $(document).ready(function () {
         required: "Обязательно напишите ваш вопрос",
         minlength: "Вопрос должен состоять из десяти символов и более"
       },
+      footerCheckbox: "Дайте согласие на обработку данных"
     }
   });
 
