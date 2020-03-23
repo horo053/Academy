@@ -956,6 +956,9 @@ img {
     font-size: 1.07rem;
     font-weight: bold; }
   .footer__map {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     max-width: 66.07rem;
     margin: auto; }
     .footer__map--icon {
@@ -1124,7 +1127,11 @@ input.invalid {
     .team__card--text {
       margin-left: 2.5rem; }
   .footer {
-    margin-top: -10rem; } }
+    background: #131313;
+    margin-top: -5rem;
+    padding-bottom: 5rem; }
+    .footer__menu {
+      display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1233,7 +1240,11 @@ input.invalid {
     .team__after {
       display: none; }
   .footer {
-    margin-top: 0; } }
+    margin-top: 0;
+    padding-bottom: 0; }
+    .footer__map-title {
+      margin-top: 3.5rem;
+      order: 1; } }
 
 @media screen and (max-height: 510px) {
   .hero__scroll-down {

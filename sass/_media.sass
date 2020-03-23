@@ -91,7 +91,11 @@
       &--text
         margin-left: 2.5rem
   .footer
-    margin-top: -10rem
+    background: $dark
+    margin-top: -5rem
+    padding-bottom: 5rem
+    &__menu
+      display: none
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -201,6 +205,11 @@
       display: none
   .footer
     margin-top: 0
+    padding-bottom: 0
+    &__map
+      &-title
+        margin-top: 3.5rem
+        order: 1
 @media screen and ( max-height: 510px )
   .hero
     &__scroll-down
